@@ -1,0 +1,452 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <title>3:10 pm</title>
+
+    <style>
+      body {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        background: black;
+        align-content: center;
+        margin: 67px;
+        color: black;
+      }
+
+      video {
+        display: inline-block;
+        width: 30%;
+      }
+
+      /*
+* === Credits and Nav ===
+*/
+      div.name_siesta {
+        position: absolute;
+        bottom: 0.2rem;
+        left: 1rem;
+        text-align: center;
+        color: #666666;
+        width: 20%;
+      }
+
+      div.name_siesta,
+      a.nav_previous_siesta,
+      a.nav_previous_siesta:visited,
+      a.nav_previous_siesta:hover,
+      a.nav_home_siesta,
+      a.nav_home_siesta:visited,
+      a.nav_home_siesta:hover,
+      a.nav_next_siesta,
+      a.nav_next_siesta:visited,
+      a.nav_next_siesta:hover {
+        text-align: center;
+        z-index: 1000;
+        color: #666666;
+        font-size: 2rem;
+        text-decoration: none;
+        position: absolute;
+      }
+
+      a.nav_previous_siesta {
+        position: absolute;
+        bottom: 2.8rem;
+        right: 1rem;
+        text-align: center;
+      }
+
+      a.nav_home_siesta {
+        position: absolute;
+        bottom: 0.2rem;
+        right: 1rem;
+        text-align: center;
+      }
+
+      a.nav_next_siesta {
+        position: absolute;
+        bottom: 5.4rem;
+        right: 1rem;
+        text-align: center;
+      }
+
+      /*
+* === MEDIA QUERIES NAV AND CREDITS===
+*/
+      @media (max-width: 915px) {
+        div.name_siesta,
+        a.nav_previous_siesta,
+        a.nav_previous_siesta:visited,
+        a.nav_previous_siesta:hover,
+        a.nav_home_siesta,
+        a.nav_home_siesta:visited,
+        a.nav_home_siesta:hover,
+        a.nav_next_siesta,
+        a.nav_next_siesta:visited,
+        a.nav_next_siesta:hover {
+          font-size: 1.4rem;
+          text-decoration: none;
+        }
+
+        div.name_siesta {
+          width: 30%;
+        }
+
+        a.nav_next_siesta {
+          bottom: 3rem;
+        }
+
+        a.nav_previous_siesta {
+          bottom: 1.6rem;
+        }
+      }
+
+      a {
+        color: black;
+      }
+
+      a:click {
+        color: black;
+      }
+
+      /* The animation code */
+
+      @keyframes buttonmove {
+        0% {
+          left: 300px;
+          top: 20px;
+        }
+
+        20% {
+          left: 0px;
+          top: 300px;
+        }
+
+        50% {
+          left: 900px;
+          top: 400px;
+        }
+
+        80% {
+          left: 900px;
+          top: 100px;
+        }
+
+        100% {
+          left: 300px;
+          top: 20px;
+        }
+      }
+
+      @keyframes movedude {
+        0% {
+          left: 0px;
+          top: 0px;
+        }
+
+        50% {
+          left: -100px;
+          top: -100px;
+        }
+
+        100% {
+          left: -300px;
+          top: 50px;
+        }
+      }
+
+      /* The animation code */
+      @keyframes movebaby {
+        0% {
+          left: 0px;
+          top: 0px;
+        }
+
+        60% {
+          left: 250px;
+          top: 200px;
+        }
+
+        80% {
+          left: -100px;
+          top: 400px;
+        }
+
+        100% {
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      /* The animation code */
+      @keyframes movejoel {
+        0% {
+          left: 0px;
+          top: 0px;
+        }
+
+        10% {
+          left: 30px;
+          top: -150px;
+        }
+
+        20% {
+          left: -100px;
+          top: -150px;
+        }
+
+        100% {
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      /* The animation code */
+      @keyframes movelight {
+        0% {
+          left: 0px;
+          top: 0px;
+        }
+
+        50% {
+          left: -70px;
+          top: -300px;
+        }
+
+        80% {
+          left: 100px;
+          top: 100px;
+        }
+
+        100% {
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      /* The animation code */
+      @keyframes movemath {
+        0% {
+          left: 0px;
+          top: 0px;
+        }
+
+        35% {
+          left: 400px;
+          top: 110px;
+        }
+
+        65% {
+          left: -300px;
+          top: -300px;
+        }
+
+        100% {
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      /* The animation code */
+      @keyframes moveson {
+        0% {
+          left: 0px;
+          top: 0px;
+        }
+
+        70% {
+          left: 150px;
+          top: -80px;
+        }
+
+        90% {
+          left: -150px;
+          top: -450px;
+        }
+
+        100% {
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      /* The element to apply the animation to */
+
+      button {
+        position: fixed;
+        top: 0;
+        left: 10px;
+        animation-name: buttonmove;
+        animation-duration: 120s;
+        animation-iteration-count: infinite;
+        cursor: pointer, auto;
+        z-index: 4;
+      }
+
+      #dude {
+        position: relative;
+        animation-name: movedude;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+        z-index: 3;
+      }
+
+      #baby {
+        position: relative;
+        animation-name: movebaby;
+        animation-duration: 60s;
+        z-index: 3;
+        animation-iteration-count: infinite;
+      }
+
+      #joel {
+        position: relative;
+        animation-name: movejoel;
+        animation-duration: 60s;
+        animation-iteration-count: 1;
+      }
+
+      #light {
+        position: relative;
+        animation-name: movelight;
+        animation-duration: 70s;
+        animation-iteration-count: 1;
+        z-index: 1;
+      }
+
+      #math {
+        position: relative;
+        animation-name: movemath;
+        animation-duration: 60s;
+        animation-iteration-count: 1;
+      }
+
+      #son {
+        position: relative;
+        animation-name: moveson;
+        animation-duration: 100s;
+        animation-iteration-count: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav_siesta">
+      <a class="nav_previous_siesta" href="travellingcamera-tokyo.html">
+        PREVIOUS
+      </a>
+      <a class="nav_home_siesta" href="index.html"> HOME </a>
+      <a class="nav_next_siesta" href="intro.html"> NEXT </a>
+    </div>
+    <div class="name_siesta">CAMILA MALENCHINI</div>
+
+    <a href="baby.html">
+      <video id="baby" poster="" autoplay muted loop>
+        <source src="baby.mp4" type="video/mp4" />
+      </video>
+    </a>
+
+    <a href="joel.html">
+      <video id="joel" poster="" autoplay loop muted>
+        <source src="joel_index.mp4" type="video/mp4" />
+      </video>
+    </a>
+
+    <a href="inside.html">
+      <video id="dude" poster="" autoplay loop muted>
+        <source src="dude.mp4" type="video/mp4" />
+      </video>
+    </a>
+
+    <a href="flight.html">
+      <video autoplay loop muted playsinline id="light" poster="">
+        <source src="flight.mp4" type="video/mp4" />
+      </video>
+    </a>
+
+    <a href="math.html">
+      <video autoplay loop muted playsinline id="math" poster="">
+        <source src="math_new.mp4" type="video/mp4" />
+      </video>
+    </a>
+
+    <a href="son.html">
+      <video autoplay loop muted playsinline id="son" poster="">
+        <source src="son.mp4" type="video/mp4" />
+      </video>
+    </a>
+
+    <button onclick="toggleMute()">Sound on/off</button>
+
+    <script>
+      var videos = ["baby", "joel", "dude", "math", "son"];
+      function toggleMute() {
+        videos.forEach(function(element) {
+          if (document.getElementById(element).muted) {
+            document.getElementById(element).muted = false;
+          } else {
+            document.getElementById(element).muted = true;
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,681 @@
+@font-face {
+  font-family: Frivole Regular;
+  src: url('Frivole-Regular.otf');
+}
+
+/*
+* === BODY ===
+*/
+html, body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  background-color: #d4e4ef;
+  line-height: 1.5;
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
+/**
+ * Firefox specific rule
+ */
+@-moz-document url-prefix() {
+  body {
+    font-weight: lighter !important;
+    scrollbar-width: none;
+  }
+}
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 300;
+  scrollbar-width: none;
+}
+
+/* loading */
+div.loading_wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #d4e4ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+}
+
+.lds-default {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.lds-default div {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  animation: lds-default 1.2s linear infinite;
+}
+
+.lds-default div:nth-child(1) {
+  animation-delay: 0s;
+  top: 29px;
+  left: 53px;
+}
+
+.lds-default div:nth-child(2) {
+  animation-delay: -0.1s;
+  top: 18px;
+  left: 50px;
+}
+
+.lds-default div:nth-child(3) {
+  animation-delay: -0.2s;
+  top: 9px;
+  left: 41px;
+}
+
+.lds-default div:nth-child(4) {
+  animation-delay: -0.3s;
+  top: 6px;
+  left: 29px;
+}
+
+.lds-default div:nth-child(5) {
+  animation-delay: -0.4s;
+  top: 9px;
+  left: 18px;
+}
+
+.lds-default div:nth-child(6) {
+  animation-delay: -0.5s;
+  top: 18px;
+  left: 9px;
+}
+
+.lds-default div:nth-child(7) {
+  animation-delay: -0.6s;
+  top: 29px;
+  left: 6px;
+}
+
+.lds-default div:nth-child(8) {
+  animation-delay: -0.7s;
+  top: 41px;
+  left: 9px;
+}
+
+.lds-default div:nth-child(9) {
+  animation-delay: -0.8s;
+  top: 50px;
+  left: 18px;
+}
+
+.lds-default div:nth-child(10) {
+  animation-delay: -0.9s;
+  top: 53px;
+  left: 29px;
+}
+
+.lds-default div:nth-child(11) {
+  animation-delay: -1s;
+  top: 50px;
+  left: 41px;
+}
+
+.lds-default div:nth-child(12) {
+  animation-delay: -1.1s;
+  top: 41px;
+  left: 50px;
+}
+
+@keyframes lds-default {
+  0%, 20%, 80%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+/*
+* === NAV LINK ===
+*/
+a.nav_start,
+a.nav_start:visited,
+a.nav_start:hover {
+  position: fixed;
+  bottom: 0.2rem;
+  right: 0.5rem;
+  color: #666666;
+  font-size: 2.4rem;
+  text-decoration: none;
+  z-index: 200;
+  cursor: pointer;
+}
+
+/*
+* === Refresh button ===
+*/
+input.refresh_intro {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  bottom: 1rem;
+  left: 0.6rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  outline: none !important;
+  box-shadow: none !important;
+  z-index: 200;
+  border: none;
+  opacity: 0.7;
+  background-image: url(refresh-outline.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+input.refresh_intro:hover,
+input.refresh_intro:active,
+input.refresh_intro:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+/*
+* === title: synthetic velvet ===
+*/
+span.syntheticvelvet_intro,
+span.issue2_top,
+span.threeten_top,
+span.slogan {
+  font-family: Frivole Regular;
+  color: #22553e;
+  text-shadow: 0 0 0.1em #ffffff, 0 0 0.15em #ffffff, 0 0 0.2em #ffffff, 0 0 0.25em #ffffff, 0 0 0.3em #ffffff, 0 0 0.3em #ffffff, 0 0 0.3em #ffffff;
+}
+
+div.about-title {
+  position: absolute;
+  margin: 0 auto;
+  line-height: 1.1;
+  top: 2rem;
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  text-align: center;
+  z-index: 500;
+}
+
+span.syntheticvelvet_intro {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-variant-ligatures: common-ligatures;
+}
+
+span.slogan {
+  display: block;
+  font-size: 2rem;
+  font-variant-ligatures: none;
+  letter-spacing: 0.1em;
+}
+
+span.issue2_top,
+span.threeten_top {
+  z-index: 500;
+  font-size: 2.2rem;
+  letter-spacing: 0.1em;
+  font-variant-ligatures: none;
+}
+
+span.issue2_top {
+  position: absolute;
+  top: 0rem;
+  left: 1rem;
+}
+
+span.threeten_top {
+  position: absolute;
+  top: 0rem;
+  right: 1rem;
+}
+
+/*
+* === intro box  ===
+*/
+div.intro {
+  position: absolute;
+  width: 55vw;
+  height: 50vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  color: #666666;
+  margin: 0 auto;
+  border-radius: 25px;
+  padding-top: 0;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 20px;
+  /* box-shadow */
+  -webkit-box-shadow: rgba(255, 255, 255, 0.8) 0px 0 15px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.8) 0 0 15px;
+  box-shadow: rgba(255, 255, 255, 0.8) 0 0 15px;
+  z-index: 100;
+  top: 5rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+a.linksv,
+a.linksv:hover,
+a.linksv:visited {
+  text-decoration: underline;
+  color: #666666;
+}
+
+p.intro_text {
+  color: #666666;
+  font-size: 1.5rem;
+  z-index: 100;
+  text-align: center;
+  padding-top: 30px;
+}
+
+span.concept_310 {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+span.italic {
+  font-style: italic;
+}
+
+span.underline {
+  text-decoration: underline;
+}
+
+/*
+* === intro scrollbar  ===
+*/
+div.intro::-webkit-scrollbar {
+  width: 1rem;
+  border-radius: 25px;
+}
+
+div.intro::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+div.intro::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+/*
+* === Canvas ===
+*/
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixe;
+  mix-blend-mode: lighten;
+  z-index: 0;
+  vertical-align: bottom;
+}
+
+canvas.in,
+canvas.out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+div.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #d4e4ef;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.background_intro {
+  width: 100vw;
+  height: 100vh;
+}
+
+section.scratched-out {
+  mix-blend-mode: darken;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*
+* === Media queries  ===
+*
+
+/* Large screens*/
+@media (min-width: 1950px) {
+  span.slogan {
+    font-size: 3.5rem;
+  }
+
+  span.syntheticvelvet_intro {
+    padding-top: 10px;
+    font-size: 4rem;
+  }
+
+  span.issue2_top,
+  span.threeten_top {
+    font-size: 3rem;
+    top: 0.2rem;
+  }
+
+  input.refresh_intro {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  div.intro,
+  p.intro_text,
+  span.concept_310 {
+    font-size: 2rem;
+  }
+
+  a.nav_start,
+  a.nav_start:visited,
+  a.nav_start:hover {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 1950px) {
+  span.slogan {
+    font-size: 3rem;
+  }
+
+  span.syntheticvelvet_intro {
+    padding-top: 10px;
+    font-size: 3.4rem;
+  }
+
+  span.issue2_top,
+  span.threeten_top {
+    font-size: 3rem;
+    top: 0.2rem;
+  }
+
+  input.refresh_intro {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  div.intro,
+  p.intro_text,
+  span.concept_310 {
+    font-size: 1.8rem;
+  }
+
+  a.nav_start,
+  a.nav_start:visited,
+  a.nav_start:hover {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width:1440px) and (max-height:745px) {
+  p.intro_text {
+    font-size: 1.3rem;
+  }
+
+  span.concept_310 {
+    font-style: italic;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width:1420px) {
+  span.concept_310 {
+    font-size: 1.4rem;
+  }
+
+  p.intro_text {
+    font-size: 1.3rem;
+  }
+
+  div.intro {
+    width: 56vw;
+  }
+
+  a.nav_start,
+  a.nav_start:visited,
+  a.nav_start:hover {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width:1040px) {
+  span.syntheticvelvet_intro {
+    font-size: 3.5rem;
+  }
+
+  span.issue2_top,
+  span.threeten_top {
+    font-size: 2rem;
+  }
+
+  span.issue2_top {
+    left: 0;
+  }
+
+  span.threeten_top {
+    right: 0;
+  }
+}
+
+@media (max-width: 975px) {
+  p.intro_text {
+    font-size: 1.2rem;
+  }
+
+  span.concept_310 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 915px) {
+  span.slogan {
+    font-size: 1.9rem;
+  }
+
+  span.syntheticvelvet_intro {
+    font-size: 2.5rem;
+  }
+
+  span.issue2_top,
+  span.threeten_top {
+    z-index: 500;
+    font-size: 2rem;
+  }
+
+  div.about-title {
+    top: 2.5rem;
+  }
+
+  a.nav_start,
+  a.nav_start:visited,
+  a.nav_start:hover {
+    font-size: 1.6rem;
+  }
+
+  input.refresh_intro {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  span.concept_310 {
+    font-size: 1.3rem;
+  }
+
+  p.intro_text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width:780px) {
+  div.abour-title {
+    line-height: 1;
+  }
+
+  span.concept_310 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width:650px) and (max-width:680px) {
+  div.intro {
+    width: 70vw;
+  }
+
+  span.concept_310 {
+    font-size: 1rem;
+  }
+
+  p.intro_text {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width:550px) and (max-width:650px) {
+
+  span.concept_310,
+  p.intro_text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width:600px) {
+  div.intro {
+    width: 75vw;
+  }
+
+  div.about-title {
+    top: 6rem;
+  }
+
+  span.slogan {
+    font-size: 1.5rem;
+  }
+
+  span.syntheticvelvet_intro {
+    font-size: 2rem;
+  }
+
+  span.issue2_top,
+  span.threeten_top {
+    z-index: 500;
+    font-size: 1.4rem;
+    top: 0.6rem;
+  }
+
+  span.concept_310,
+  p.intro_text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-height:555px) {
+  div.about-title {
+    top: 4rem;
+  }
+}
+
+@media (max-height:450px) {
+  div.about-title {
+    top: 2.3rem;
+    line-height: 1;
+  }
+
+  span.slogan {
+    font-size: 1.5rem;
+  }
+
+  span.issue2_top,
+  span.threeten_top {
+    font-size: 1.3rem;
+  }
+
+  span.syntheticvelvet_intro {
+    font-size: 2rem;
+  }
+
+  a.nav_start,
+  a.nav_start:hover,
+  a.nav_start:active {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+/* iPhone 6, 7, & 8 in portrait*/
+@media (min-width: 375px) and (max-width: 667px) {
+  .issue2_top {
+    margin-left: 0.5rem;
+    left: 0;
+  }
+}
+
+@media (max-width:420px) {
+
+  p.intro_text,
+  span.concept_310 {
+    font-size: 0.9rem;
+  }
+
+  a.nav_start,
+  a.nav_start:visited,
+  a.nav_start:hover {
+    font-size: 1.5rem;
+  }
+
+  input.refresh_intro {
+    left: 0.3rem;
+  }
+
+  div.about-title {
+    top: 2.3rem;
+    line-height: 1;
+  }
+
+  span.slogan,
+  span.issue2_top,
+  span.threeten_top {
+    font-size: 1.3rem;
+  }
+
+  span.syntheticvelvet_intro {
+    font-size: 1.8rem;
+  }
+}

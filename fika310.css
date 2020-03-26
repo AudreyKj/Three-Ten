@@ -1,0 +1,472 @@
+html, body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 300;
+  background: rgb(212, 228, 239);
+  background: -moz-linear-gradient(90deg, rgba(212, 228, 239, 1) 0%, rgba(17, 67, 87, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(212, 228, 239, 1) 0%, rgba(17, 67, 87, 1) 100%);
+  background: linear-gradient(90deg, rgba(212, 228, 239, 1) 0%, rgba(17, 67, 87, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d4e4ef", endColorstr="#114357", GradientType=1);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* section 1 with image */
+section.fika_section_1 {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.content-section1 {
+  position: relative;
+  margin-left: -1%;
+}
+
+/* illustration  */
+img.image_fika {
+  -webkit-box-shadow: rgba(255, 255, 255, 0.8) 0px 0 15px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.8) 0 0 15px;
+  box-shadow: rgba(255, 255, 255, 0.8) 0 0 15px;
+  position: relative;
+  width: 486px;
+  height: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* section 2  */
+section.fika_section_2 {
+  position: sticky;
+  position: -webkit-sticky;
+  overflow-y: scroll;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* navigation and credits */
+div.credits_fika {
+  bottom: 0;
+  left: 0.5rem;
+  text-align: center;
+  color: #9e9e9e;
+  font-weight: 300;
+  font-style: normal;
+}
+
+div.credits_fika,
+div.nav_fika,
+a.previous_fika,
+a.home_fika,
+a.next_fika,
+a.previous_fika:hover,
+a.home_fika:hover,
+a.next_fika:hover,
+a.previous_fika:active,
+a.home_fika:active,
+a.next_fika:active {
+  text-align: center;
+  z-index: 2;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 300;
+  font-style: normal;
+  position: fixed;
+}
+
+a.previous_fika {
+  bottom: 2.8rem;
+  right: 1rem;
+  text-align: center;
+  color: #9e9e9e;
+}
+
+a.home_fika {
+  bottom: 0.2rem;
+  right: 1rem;
+  text-align: center;
+  color: #9e9e9e;
+}
+
+a.next_fika {
+  bottom: 5.4rem;
+  right: 1rem;
+  text-align: center;
+  color: #9e9e9e;
+}
+
+/* modal box */
+#modaldream {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  right: 3rem;
+  top: 3rem;
+  background: rgba(204, 204, 204, 0.3);
+  backdrop-filter: blur(2rem);
+  border-radius: .8rem;
+  color: white;
+  width: 17%;
+  height: 9%;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all .2s ease;
+  z-index: 1000;
+}
+
+#modaldream:hover {
+  cursor: pointer;
+  background: rgba(204, 204, 204, 0.1);
+  opacity: 0.7;
+  transition: all .2s ease;
+}
+
+span.modal_dream_text {
+  font-size: 1rem;
+  color: #ffffff;
+  opacity: 0.8;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+/* The Close Button */
+.close {
+  color: #ffffff;
+  position: absolute;
+  bottom: 0.1rem;
+  right: 0.2rem;
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+.close:hover,
+.close:focus {
+  opacity: 0.4;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* section2 + TEXT */
+section.fika_section_2 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+p.text_fika_sofia {
+  width: 95vw;
+  font-size: 6vmin;
+  text-shadow: 0 0 0.1em #cccccc, 0 0 0.15em #cccccc, 0 0 0.2em #cccccc, 0 0 0.25em #cccccc, 0 0 0.3em #cccccc, 0 0 0.3em #cccccc, 0 0 0.3em #cccccc;
+  color: #ffffff;
+  letter-spacing: 0.15em;
+  text-align: center;
+  z-index: 3000;
+  line-height: 1.26;
+}
+
+/* MEDIA QUERIES */
+/* iMac 21, iMac 27*/
+@media (min-width:2000px) {
+  #modaldream {
+    width: 15%;
+    height: 10%;
+    text-align: center;
+  }
+
+  span.modal_dream_text {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  img.image_fika {
+    width: 40vw;
+    height: auto;
+  }
+}
+
+@media (min-width:1920px) {
+  #modaldream {
+    width: 15%;
+    height: 10%;
+    text-align: center;
+  }
+
+  span.modal_dream_text {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  img.image_fika {
+    width: 30vw;
+    height: auto;
+  }
+}
+
+@media (max-width:1115px) {
+  #modaldream {
+    width: 16%;
+    height: 6%;
+  }
+
+  span.modal_dream_text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width:915px) {
+  #modaldream {
+    width: 17%;
+    height: 7%;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  span.modal_dream_text {
+    font-size: 0.7rem;
+  }
+
+  div.credits_fika,
+  div.nav_fika,
+  a.previous_fika,
+  a.home_fika,
+  a.next_fika,
+  a.previous_fika:hover,
+  a.previous_fika:active,
+  a.home_fika:hover,
+  a.home_fika:active,
+  a.next_fika:hover,
+  a.next_fika:active {
+    font-size: 1.4rem;
+    z-index: 1000;
+  }
+
+  a.next_fika {
+    position: fixed;
+    bottom: 3rem;
+  }
+
+  a.previous_fika {
+    position: fixed;
+    bottom: 1.6rem;
+  }
+
+  div.credits_fika {
+    text-align: center;
+    left: 0.5rem;
+  }
+}
+
+/* iPhone X in portrait*/
+@media (min-width: 375px) and (max-width: 812px) and (orientation : portrait) {
+  img.image_fika {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* iPhone X in landscape*/
+@media (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+  img.image_fika {
+    width: auto;
+    height: 80vh;
+  }
+}
+
+@media (max-width:610px) {
+  div.content-section1 {
+    margin-left: -5%;
+  }
+}
+
+/* iPhone 6, 7, 8 Plus in portrait */
+@media (min-width: 414px) and (max-width: 736px) and (orientation: portrait) {
+  #modaldream {
+    width: 25%;
+    height: 6%;
+  }
+
+  img.image_fika {
+    width: 60%;
+    height: auto;
+  }
+}
+
+/* iPhone 6 Plus in landscape */
+@media (min-width:414px) and (max-width:736px) and (orientation:landscape) {
+  img.image_fika {
+    width: auto;
+    height: 90vh;
+  }
+
+  #modaldream {
+    width: 25%;
+    height: 11%;
+  }
+}
+
+/* iPhone 6, 7, & 8 in portrait*/
+@media (min-width: 375px) and (max-width:667px) and (orientation: portrait) {
+  #modaldream {
+    width: 25%;
+    height: 10%;
+  }
+
+  .close {
+    font-size: 24px;
+  }
+
+  img.image_fika {
+    width: 80%;
+    height: auto;
+    margin-top: -20%;
+  }
+
+  section.fika_section_1 {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    overflow-x: hidden;
+  }
+}
+
+/* iPhone 6, 7, & 8 in landscape*/
+@media (min-width: 375px) and (max-width: 667px) and (orientation:landscape) {
+  #modaldream {
+    width: 26%;
+    height: 10%;
+  }
+
+  .image_fika {
+    width: auto;
+    height: 90vh;
+  }
+}
+
+/* Portrait iPhone 5 and iPhone 5S */
+@media (min-width: 200px) and (max-width: 568px) and (orientation: portrait) {
+  section.fika_section_1 {
+    padding-top: -15%;
+  }
+
+  #modaldream {
+    width: 25%;
+    height: 11%;
+  }
+
+  span.modal_dream_text {
+    font-size: 0.6rem;
+  }
+
+  img.image_fika {
+    width: 60%;
+    height: auto;
+  }
+}
+
+/* Landscape iPhone 5 and iPhone 5S */
+@media (min-width: 320px) and (max-width: 568px) and (orientation:landscape) {
+  img.image_fika {
+    width: auto;
+    height: 90vh;
+  }
+}
+
+/* iPhone 4/4S (portrait mode)*/
+@media (min-width: 320px) and (max-width: 480px) and (orientation:portrait) {
+  #modaldream {
+    width: 26%;
+    height: 10%;
+  }
+
+  span.modal_dream_text {
+    font-size: 0.6rem;
+  }
+}
+
+/* MAGNIFY LENS */
+html.magnifying>body {
+  overflow-x: hidden !important;
+}
+
+.magnify,
+.magnify>.magnify-lens,
+.magnify-mobile,
+.lens-mobile {
+  /* Reset */
+  min-width: 0;
+  min-height: 0;
+  animation: none;
+  border: none;
+  float: none;
+  margin: 0;
+  opacity: 1;
+  outline: none;
+  overflow: visible;
+  padding: 0;
+  text-indent: 0;
+  transform: none;
+  transition: none;
+}
+
+.magnify {
+  position: relative;
+  width: auto;
+  height: auto;
+  box-shadow: none;
+  display: inline-block;
+  z-index: inherit;
+}
+
+.magnify>.magnify-lens {
+  /* Magnifying lens */
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  /* Multiple box shadows to achieve the glass lens effect */
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.85),
+    0 0 3px 3px rgba(0, 0, 0, 0.25),
+    inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  cursor: none;
+  display: none;
+  z-index: 99;
+}
+
+.magnify>.magnify-lens.loading {
+  background: #333 !important;
+  opacity: 0.8;
+}
+
+.magnify>.magnify-lens.loading:after {
+  /* Loading text */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  content: 'Loading...';
+  font: italic normal 16px/1 Calibri, sans-serif;
+  letter-spacing: 1px;
+  margin-top: -8px;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(51, 51, 51, 0.8);
+  text-transform: none;
+}

@@ -1,0 +1,100 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+  <title>3:10 pm </title>
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <style>
+    /*
+* === Credits and Nav ===
+*/
+    a.name_siesta {
+      position: absolute;
+      bottom: 0.2rem;
+      left: 1rem;
+      text-align: center;
+      color: #666666;
+      width: 20%;
+    }
+
+    a.name_siesta,
+    a.name_siesta:hover,
+    a.name_siesta:visited {
+      text-align: center;
+      z-index: 20000;
+      color: #666666;
+      font-size: 2rem;
+      text-decoration: none;
+      position: absolute;
+    }
+
+    /*
+* === MEDIA QUERIES NAV AND CREDITS===
+*/
+    @media (max-width: 915px) {
+
+      a.name_siesta,
+      a.name_siesta:hover,
+      a.name_siesta:visited {
+        font-size: 1.4rem;
+        z-index: 10000;
+        text-decoration: none;
+      }
+    }
+
+    body {
+      background: black;
+      overflow: hidden;
+      font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    }
+
+    #back {
+      position: fixed;
+      left: -90px;
+      bottom: -50;
+      width: 120%;
+      height: 120%;
+
+      z-index: 1;
+    }
+
+    video {
+      object-fit: contain;
+    }
+  </style>
+  <meta http-equiv="refresh" content="40;url=inside.html" />
+</head>
+
+<body>
+
+  <a href="inside.html">
+    <video autoplay loop muted playsinline id="back" poster="">
+      <source src="videotwo.mp4" type="video/mp4" />
+    </video>
+    <a class="name_siesta" href="siestatseis.html">SIESTATSEIS</a>
+  </a>
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+body {
+  background-color: #d4e4ef;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  scrollbar-color: #d4e4ef white;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+/**
+ * Firefox specific rule
+ */
+@-moz-document url-prefix() {
+  body {
+    font-weight: lighter !important;
+    scrollbar-width: none;
+  }
+}
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 300;
+  scrollbar-width: none;
+}
+
+div.scroll {
+  height: 100vh;
+}
+
+div.instructions_becoming {
+  position: absolute;
+  top: 2rem;
+  letter-spacing: 0.2em;
+  font-size: 1.2rem;
+  color: #ae8dff;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+}
+
+/*
+* === Ball animation ===
+*/
+div.ball {
+  background-color: transparent;
+  box-shadow: 0px 0px 15px 10px white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  animation: heartbeat 5s infinite;
+}
+
+/*
+* === sections and images ===
+*/
+section.first {
+  min-height: 100vh;
+  background-color: #d4e4ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+section.becoming_threeten {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+section.background {
+  min-height: 100vh;
+  background-color: #d4e4ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+section.becoming_threeten_padding {
+  height: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+div.content_310 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.content_310 img {
+  height: auto;
+  width: 100%;
+}
+
+/*
+* === NAV AND CREDITS===
+*/
+div.credits_becoming {
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  text-align: center;
+  color: #9e9e9e;
+  font-weight: 300;
+  font-style: normal;
+}
+
+div.credits_becoming,
+div.nav_becoming,
+a.previous_becoming,
+a.home_becoming,
+a.next_becoming,
+a.previous_becoming:hover,
+a.home_becoming:hover,
+a.next_becoming:hover,
+a.previous_becoming:active,
+a.home_becoming:active,
+a.next_becoming:active {
+  z-index: 2;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 300;
+  font-style: normal;
+  color: #9e9e9e;
+  position: absolute;
+}
+
+div.nav_becoming {
+  bottom: 0rem;
+  right: 1rem;
+  position: absolute;
+}
+
+a.previous_becoming {
+  bottom: 2.8rem;
+  right: 1rem;
+  position: absolute;
+}
+
+a.home_becoming {
+  bottom: 0.2rem;
+  right: 1rem;
+  position: absolute;
+}
+
+a.next_becoming {
+  bottom: 5.4rem;
+  right: 1rem;
+  position: absolute;
+}
+
+/*
+* === text section 1 ===
+*/
+div.text_audrey1 {
+  width: 80vw;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+p.p_becoming310 {
+  font-size: 7vmin;
+  color: #9368ff;
+  line-height: 1.4;
+}
+
+span.becoming_display5 {
+  color: #ffffff;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+span.becoming_display1:hover,
+span.becoming_display2:hover,
+span.becoming_display3:hover,
+span.becoming_display4:hover,
+span.becoming_display6:hover {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+span.becoming_display5:hover {
+  font-style: italic;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+span.becoming_highlight {
+  color: #ffffff;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+/*
+* === progress bar ===
+*/
+div.progress_becoming310 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0.6rem;
+  background-color: #9368ff;
+  /* box-shadow */
+  -webkit-box-shadow: rgba(255, 255, 255, 0.8) 0px 0 30px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.8) 0 0 30px;
+  box-shadow: rgba(255, 255, 255, 0.8) 0 0 30px;
+  transition: background-color 0.5s;
+  z-index: 5000;
+}
+
+/*
+* === media queries ===
+*/
+@media (max-width: 940px) {
+  p.p_becoming310 {
+    font-size: 6vmin;
+  }
+}
+
+@media (max-width: 915px) {
+
+  div.credits_becoming,
+  div.nav_becoming,
+  a.previous_becoming,
+  a.home_becoming,
+  a.next_becoming,
+  a.previous_becoming:hover,
+  a.previous_becoming:active,
+  a.home_becoming:hover,
+  a.home_becoming:active,
+  a.next_becoming:hover,
+  a.next_becoming:active {
+    font-size: 1.4rem;
+    z-index: 1000;
+    position: fixed;
+  }
+
+  a.next_becoming {
+    bottom: 3rem;
+  }
+
+  a.previous_becoming {
+    bottom: 1.6rem;
+  }
+
+  div.credits_becoming {
+    width: 10%;
+  }
+
+  div.ball {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width:800px) {
+  div.ball {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width:600px) {
+  div.instructions_becoming {
+    font-size: 0.8rem;
+  }
+}
+
+/* Portrait iPhone 5 and iPhone 5S */
+@media (min-width: 320px) and (max-width: 568px) and (orientation: portrait) {
+  section.becoming_threeten_padding {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* iPhone 6 Plus Portrait */
+@media (min-width: 414px) and (max-width: 736px) and (orientation: portrait) {
+  section.becoming_threeten_padding {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* iPhone 6, 7, & 8 in portrait*/
+@media (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
+  section.becoming_threeten_padding {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding: 0;
+    padding-bottom: 0;
+  }
+
+  div.text_audrey1 {
+    margin-top: -20%;
+  }
+}
+
+/* iMac 21, iMac 27*/
+@media (min-width:1920px) {
+  div.ball {
+    width: 200px;
+    height: 200px;
+  }
+
+  div.instructions_becoming {
+    font-size: 1.5rem;
+  }
+}

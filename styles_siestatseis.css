@@ -1,0 +1,154 @@
+video {
+	display: inline-block;
+	width: 30%;
+
+}
+
+body {
+	background: black;
+	align-content: center;
+	margin: 67px;
+	color: black;
+}
+
+a {
+	color: black;
+
+	
+}
+
+a:click {
+	color: black;
+	
+}
+
+
+
+/* The animation code */
+
+@keyframes buttonmove {
+  0%   {left: 300px; top: 20px;}
+    20%  {left: 0px; top: 300px;}
+    50%  {left: 900px; top: 400px;}
+    80%  {left: 900px; top: 100px;}
+  100%  {left: 300px; top: 20px;}
+}
+
+@keyframes movedude {
+  0%   {left: 0px; top: 0px;}
+  50%  {left: -100px; top: -100px;}
+  100%  {left: -300px; top: 50px;}
+}
+
+/* The animation code */
+@keyframes movebaby {
+  0%   {left: 0px; top: 0px;}
+  60%  {left: 250px; top: 200px;}
+  80%   {left: -100px; top: 400px;}
+  100%   {left: 0px; top: 0px;}
+  
+}
+
+/* The animation code */
+@keyframes movejoel {
+  0%   {left: 0px; top: 0px;}
+  10%  {left: 30px; top: -150px;}
+  20% {left: -100px; top: -150px;}
+    100%   {left: 0px; top: 0px;}
+}
+
+/* The animation code */
+@keyframes movelight {
+  0%   {left: 0px; top: 0px;}
+  50%  {left: -70px; top: -300px;}
+  80%  {left: 100px; top: 100px;}
+  100%   {left: 0px; top: 0px;}
+}
+
+/* The animation code */
+@keyframes movemath {
+  0%   {left: 0px; top: 0px;}
+  35%  {left: 400px; top: 110px;}
+  65% {left: -300px; top: -300px;}
+  100%  {left: 0px; top: 0px;}
+}
+/* The animation code */
+@keyframes moveson {
+  0%   {left: 0px; top: 0px;}
+ 70%   {left: 150px; top: -80px;}
+  90%  {left: -150px; top: -450px;}
+  100%  {left: 0px; top: 0px;}
+}
+/* The element to apply the animation to */
+
+
+button  {
+  position: fixed;
+  top: 0;
+ left: 10px;
+  animation-name: buttonmove;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+  cursor: pointer, auto;
+  z-index: 4;
+}
+	
+
+
+#dude {
+  position: relative;
+  animation-name: movedude;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  z-index: 3;
+}
+
+#baby
+
+{
+  position: relative;
+  animation-name: movebaby;
+  animation-duration: 60s;
+  z-index: 3;
+  animation-iteration-count: infinite;
+ 
+}
+
+
+
+#joel {
+  position: relative;
+  animation-name: movejoel;
+  animation-duration: 60s;
+  animation-iteration-count: 1;
+ 
+}
+
+
+
+#light {
+  position: relative;
+  animation-name: movelight;
+  animation-duration: 70s;
+  animation-iteration-count: 1;
+  z-index: 1;
+}
+
+
+#math {
+  position: relative;
+  animation-name: movemath;
+  animation-duration: 60s;
+  animation-iteration-count: 1;
+ 
+}
+
+
+#son {
+  position: relative;
+  animation-name: moveson;
+  animation-duration: 100s;
+  animation-iteration-count: 1;
+
+}
+

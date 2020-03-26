@@ -1,0 +1,97 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+  <title>3:10 pm </title>
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <link rel="stylesheet" type="text/css" href="fika310.css" />
+</head>
+
+<body>
+  <!–– first section ––>
+    <section class="fika_section_1">
+      <div class="content-section1">
+        <!–– magnify + image ––>
+          <img src="310pm-copy_4.jpg" srcset="310pm-copy_4.jpg, 310pm_sofia_retinax2.jpg 2x,310pm_sofia_retinax3.jpg 3x" class="zoom image_fika" data-magnify-src="310pm_sofia_zoom_img.jpg">
+    </section>
+
+
+    <!–– modal box ––>
+      <div id="modaldream">
+        <span class="modal_dream_text">
+          hover on the image
+          & scroll down
+        </span>
+        <span class="close">&times;</span>
+      </div>
+
+      <!–– navigation and credits––>
+        <div class="nav_fika">
+          <a class="previous_fika" href="intro.html"> PREVIOUS </a>
+          <a class="home_fika" href="index.html"> HOME </a>
+          <a class="next_fika" href="play.html"> NEXT </a>
+        </div>
+
+        <div class="credits_fika">
+          SOFIA <br> HJORTBERG
+        </div>
+
+        <!–– section 2 with text ––>
+          <section class="fika_section_2">
+            <div class="content_fika">
+              <p class="text_fika_sofia">Today, in my adult life, 3:10 pm would be a time when I'm never home.</a> <br><br> Instead, I'm probably on the second to last lecture, restless.Or just about to clock in at the restaurant.<br><br>A time of
+                waiting: for what's happening after school, for
+                dinner, for the busy evening hours at work.<br><br>In the fatigue of waiting, my home can feel almost magical. <br><br> At 3:10 pm in Stockholm, it's dark outside for half the year - every year it feels just as surreal to sit in a
+                well-lit classroom, looking out the window and not knowing if it's 3, 7,10 pm. <br /><br />The time is also traditionally linked with Fika - pausing for coffee, pastries, talking. <br><br>However, it is not as common now compared to a
+                few decades ago. Taking a break in the middle of the afternoon is a nice thing though... <br><br> This illustration is what I dream about at 3:10 pm.<br><br><br></p></span>
+            </div>
+          </section>
+
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="jquery.magnify.js"></script>
+          <script src="jquery.magnify-mobile.js"></script>
+
+          <script>
+            // MAGNIFIER
+            $(document).ready(function() {
+              $('.zoom').magnify({
+                speed: 200,
+                src: '310pm_sofia_zoom_img.jpg',
+              });
+            });
+
+            // MODAL
+            var modal = document.getElementById("modaldream");
+
+            var span = document.getElementsByClassName("close");
+
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+
+            modal.onclick = function() {
+              modal.style.display = "none";
+            }
+          </script>
+</body>
