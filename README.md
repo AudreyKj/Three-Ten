@@ -14,5 +14,5 @@ Since launching, synthetic velvet has been exhibited as a part of the Vorspiel p
 
 Check out the project's first issue: [5:40 AM ](https://www.syntheticvelvet-fiveforty.com/)<br />
 
-Technologies: HTML, CSS, JavaScript, JQuery
+Technologies: HTML, CSS, JavaScript, JQuery <br />
 Libraries & Plugins: Three.js, jQuery Magnify
