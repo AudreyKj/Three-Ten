@@ -23,20 +23,6 @@ creative content contributors: Mio Ary with the participation of Adam, Izumi, Ko
 **Stack**: HTML, CSS, JavaScript, jQuery, Three.js <br />
 **Plugin**: jQuery Magnify <br />
 
-## Design & color palette
-
-<p align="center">
-<img width="150" height="250" src="palette.jpg">
-<p align="center">
-light blue, #d4e4ef </br>
-pastel pink, #ddbbdd </br>
-dark turquoise, #73adc6 </br>
-pastel purple, #a785ff </br>
-</p>
-</p>
-
-<p align="center">The website features a creative, interactive design for a unique user experience.</p>
-
 ## Visuals
 
 ![picture](/screenshot-1.png)
