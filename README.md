@@ -1,12 +1,6 @@
 # ThreeTen - creative website for magazine
 
-[THREE TEN](https://www.syntheticvelvet-threeten.com/) is a creative website inspired by the time 3:10 pm. It is the second issue of online magazine synthetic velvet.
-
-synthetic velvet is a creative project which explores the concept of time. Each issue takes the form of a website and is themed around one specific hour.
-
-Since launching, synthetic velvet has been exhibited internationally in art and design exhibitions (Vorspiel organized by CTM/Transmediale in Berlin, design exhibition [VABF](http://vancouverartbookfair.com/19/about/) in Vancouver)
-
-Check out the project's first issue: [5:40 AM ](https://www.syntheticvelvet-fiveforty.com/)<br />
+[THREE TEN](https://www.syntheticvelvet-threeten.com/) is a creative website with interactive UX. It was made for an online magazine project.<br />
 
 ## Features
 
@@ -26,9 +20,5 @@ creative content contributors: Mio Ary with the participation of Adam, Izumi, Ko
 ## Visuals
 
 ![picture](/screenshot-1.png)
-![picture](/screenshot-7.png)
 ![picture](/screenshot-2.png)
 ![picture](/screenshot-3.png)
-![picture](/screenshot-4.png)
-![picture](/screenshot-5.png)
-![picture](/screenshot-6.png)
