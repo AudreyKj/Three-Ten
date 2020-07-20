@@ -20,4 +20,3 @@ creative content contributors: Mio Ary with the participation of Adam, Izumi, Ko
 ## Visuals
 
 ![picture](/screenshot-1.png)
-![picture](/screenshot-3.png)
